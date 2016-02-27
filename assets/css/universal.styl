@@ -1,0 +1,374 @@
+global-reset()
+reset-html5()
+
+body
+  {FONT_REGULAR}
+  font-size 13px
+  a
+    text-decoration none
+    color inherit
+  ul,li
+    list-style none
+    padding 0
+    margin 0
+
+  button, a
+    cursor pointer
+    outline 0
+    transition all 0.7s
+
+  b, strong
+    {FONT_BOLD}
+
+  i
+    font-style italic
+
+.container-sml
+  width 55%
+  margin-left auto
+  margin-right auto
+
+.container
+  clearfix()
+  width 85%
+  margin-left auto
+  margin-right auto
+  max-width 1200px
+  +below(3)
+    width 95%
+
+.container-lrg
+  width 97%
+  margin-left auto
+  margin-right auto
+
+.hidden-sm
+  display block
+
+.hidden-bg
+  display none
+
+.hidden
+  display none
+
++below(2)
+  .hidden-sm
+    display none !important
+  .hidden-bg
+    display block
+
++below(3)
+  .hidden-md
+    display none
+
+// +below(4)
+//   .hidden-tab
+//     display none !important
+
+
+.page-back
+  font-size 13px
+  display block
+  margin 20px 0
+  i
+    font-size 10px
+
+.funky-header
+  color #a4bba1
+  font-size 40px
+  margin-bottom 20px
+  {FONT_SEMIBOLD}
+  small
+    font-size 20px
+    position relative
+    top -7px
+
+.text-right
+  text-align right
+
+.text-left
+  text-align left
+
+.text-center
+  text-align center
+
+.pagination
+  font-size 12px
+  padding 20px 0 5px
+  clearfix()
+  .alignleft
+    float left
+
+  .alignright
+    float right
+
+  &.careers
+    margin-bottom: 40px;
+
+.filter-icons
+  font-size 30px
+  margin-left 19px
+  line-height 44px
+  a
+    margin-left 10px
+    &.inactive
+      color #CCC
+
+
+.float-right
+  float right
+
+.float-left
+  float left
+
+// Single page.
+.content-generic
+  clearfix()
+
+  .img
+    float left
+
+    /.single &
+      margin-right 20px
+
+  &.has-thumb
+    .bd
+      margin-left 180px
+
+  .bd
+    /.single &
+      margin-left 0
+
+
+    .time
+      {FONT_LIGHT}
+      color #80a4a7
+      font-size 14px
+      margin-bottom 3px
+
+    .more-link
+      color #415a68
+      text-transform uppercase
+      font-size 13px
+      {FONT_REGULAR}
+      transition all .125s ease-in-out
+      i
+        font-size 11px
+      &:hover
+        color #a4bba1
+
+    .page-title
+      a
+        {FONT_SEMIBOLD}
+        font-size 15px
+        color #415a68
+        &:hover
+          color #a4bba1
+        em
+          {FONT_LIGHT}
+          text-transform none
+          color #999
+          font-style italic
+
+      &.non-single
+        border none
+        padding 0
+        margin 0 0 20px
+        line-height 20px
+
+.contact-banner
+  padding 75px 0
+  .row
+    clearfix()
+    .col
+      col(1/3)
+      white-space nowrap
+
+      h4
+        color #a4bba1
+        {FONT_SEMIBOLD}
+        font-size 19px
+        text-transform uppercase
+        padding-top 7px
+
+      a
+        color #415a68
+        {FONT_SEMIBOLD}
+        font-size 17px
+
+        i
+          color #f36f3a
+          font-size 25px
+          position relative
+          bottom -4px
+          margin-right 3px
+.bot-pad-20
+  padding-bottom 20px
+
+// Buttons.
+
+.btn
+  {FONT_REGULAR}
+  box-sizing(border-box)
+  display inline-block
+  background #a0acb3
+  color white
+  text-transform uppercase
+  padding 10px 18px
+  font-size 13px
+  i
+    font-size 10px
+    display inline-block
+    margin-left 5px
+
+  &:hover, /.__hovered .btn
+    color white
+    background #a4bba1
+
+  &.red
+    background #f36f3a
+    color #FFF
+    &:hover
+      background darken(@background, 50%)
+      color #FFF
+
+  &.blue
+    background #a4bba1
+    color #FFF
+    &:hover
+      background darken(@background, 50%)
+      color #FFF
+
+  &.red-border
+    padding 8px 16px
+    background transparent
+    border 2px solid #f36f3a
+    color #415a68
+    &:hover, /.dropdown:hover .red-border
+      background #f36f3a
+      color white
+  &.default
+    background #FFF
+    color #7B4831
+    padding 15px 16px
+    &:hover
+      background #A4BBA1
+      color #FFF
+  &.transparent
+    background transparent
+    color #FFF
+    border 1px solid #FFF
+    padding 10px 16px
+    &:hover
+      background #A4BBA1
+      color #FFF
+
+
+ul.menu
+  margin 0
+  padding 0
+  list-style none
+  text-align center
+  li
+    display inline
+
+
+.clearfix
+  clearfix()
+
+.leaves
+  max-width 345px
+  max-height 215px
+  span(2/5)
+  img
+    max-width 100% !important
+    height auto
+    display block
+.half-leaves
+  position absolute
+  max-width 165px
+  max-height 215px
+  bottom -50px
+  span(2/5)
+  img
+    max-width 100% !important
+    height auto
+    display block
+.right-leaves
+  position absolute
+  max-width 174px
+  max-height 316px
+  right 0
+  margin-top -50px
+  span(2/5)
+  +below(3)
+    display none
+  img
+    max-width 100% !important
+    height auto
+    display block
+
+// Subtitles
+h2.title
+  font-size 4em
+  text-transform uppercase
+  {FONT_LIGHT}
+  +below(4)
+    font-size 3em
+  &::before
+    background-color #000
+    content ""
+    display inline-block
+    height 2px
+    position relative
+    vertical-align alignment-baseline
+    width 70px
+    right 0.5em
+    margin-left -70px
+  strong
+    {FONT_BOLD}
+    display block
+
+// Fancybox Changes
+.fancybox-skin
+  background #FFF
+// Content
+.content
+  .content-with-sidebar
+    col(16/24)
+    shift(8/24)
+    +below(3)
+      unshift()
+      stack()
+    ul
+      padding 0 0 0 40px
+      margin-bottom 20px
+      li
+        list-style-type disc
+
+  .content-sidebar
+    col(8/24)
+    shift(-16/24)
+    +below(3)
+      stack()
+      unshift()
+
+    .box
+      margin-bottom 25px
+
+dl.dl-horizontal
+  margin 10px 0
+  display inline-block
+  width 100%
+  dt
+    col(1/4, gutter: 2, cycle: 2)
+    font-weight 700
+    text-align right
+    margin-bottom 5px
+    +below(2)
+      col(1/1, uncycle: 2)
+  dd
+    col(3/4, gutter: 2, cycle: 2)
+    margin-bottom 5px
+    +below(2)
+      col(1/1, uncycle: 2)

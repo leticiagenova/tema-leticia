@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "description": "A super simple, yet elegant starter theme for wordpress.",
+  "author": "Pete Saia",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-plumber": "*",
+    "gulp-concat": "*",
+    "gulp-rename": "*",
+    "gulp-uglify": "*",
+    "gulp-stylus": "*",
+    "gulp-less": "*",
+    "jeet": "*",
+    "nib": "*",
+    "rupture": "*",
+    "stylus": "*",
+    "autoprefixer-stylus": "*"
+  }
+}
