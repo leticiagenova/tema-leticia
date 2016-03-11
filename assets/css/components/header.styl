@@ -7,29 +7,69 @@ header, .main
   #header-top
     background-color #f6f6f6
     border-bottom 1px solid #eee
-    padding 10px 0px
+    padding 10px 0
     color #303030
     font-size 15px
     font-family "Source Sans Pro"
 
-  .text-1
+  .text-1, .text-2
     col(1/2)
-    float left
 
   .text-2
     text-align right
     margin-right 50px
 
-  #header-logo
-    col(1/2, gutter: .5, cycle: 2)
+  #header
+    margin-top 40px
+    margin-bottom 50px
+    height 60px
+
+  #logo
+    col(4/20, gutter: 8)
     a
       width 100%
-      height 48px
-      background url(http://broker.commercegurus.com/wp-content/uploads/2015/10/broker-logo.png)
+      background-image url(http://broker.commercegurus.com/wp-content/uploads/2015/10/broker-logo.png)
+      background-size contain
       background-repeat no-repeat
       float left
       text-indent -9999em
       overflow hidden
-      margin-top 70px
-  #header-menu
-    col(1/2, cycle: 2)
+      height 60px
+
+  div#info
+    col(11/20)
+
+
+  .info-2
+    col(5/20, cycle: 6)
+   
+
+  .title-info
+    font-weight bold
+    margin-bottom 5px
+
+  .title-info, .text-info
+    font-size 15px
+    font-family "Source Sans Pro"
+
+  .icon
+    col(1/20, gutter: 2px)
+
+  .ion-ios-telephone-outline, .ion-ios-location-outline, .ion-ios-time-outline
+    font-size 35px
+    color: #24A3D8
+    margin-top 5px
+
+
+  #search
+    col(4/20)
+
+  #submit-button
+    margin-left -60px
+
+  +below(3)
+    #logo, .info, .title-info, .text-1, .text-2
+      stack()
+      margin-bottom 10px
+    .text-2
+      text-align center

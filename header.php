@@ -17,6 +17,7 @@ $currentPageID = get_the_ID();
 <title><?php bloginfo('name'); ?> | <?php is_home() ? bloginfo('description') : wp_title(''); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 <?= Rye::stylesheet() ?>
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -57,10 +58,93 @@ $currentPageID = get_the_ID();
     </div>
   </div>
 
-  <div class="container">
-    <div id="header-logo">
-      <a href="/" class="logo"><?= get_bloginfo('name') ?></a>
+  <!-- Logo -->
+    <div class="container">
+      <div id="header">
+         <div id="logo">
+            <a href="/"><?= get_bloginfo('name') ?></a>
+         </div>
+
+  <!-- Info header Contact, Local, Date -->
+        <div id="info">
+            <div class="icon">
+                <i class="ion-ios-telephone-outline"></i>
+            </div>
+            <div class="info-2">
+                <div class="title-info">
+                  <a href="callto:1800 234 567">1800 234 567</a>
+               </div>
+               <div class="text-info">
+                  <a href="mailto:info@example.com">info@example.com</a>
+               </div>
+            </div>
+
+            <div class="icon">
+                <i class="ion-ios-location-outline"></i>
+            </div>
+           <div class="info-2">
+               <div class="title-info">
+                  <p>Goldsmith Hall,</p>
+               </div>
+                <div class="text-info">
+                   <p>New York, NY 90210 </p>
+                </div>
+            </div>
+
+            <div class="icon">
+                <i class="ion-ios-time-outline"> </i>
+            </div>
+           <div class="info-2">
+                <div class="title-info">
+                    <p>07:30 – 19:00</p>
+                </div>
+                <div class="text-info">
+                    <p>Monday to Friday</p>
+                </div>
+           </div>
+        </div>
+
+    <!-- Search -->
+         <div id="search">
+            <form action="#">
+                <input id="search-box" type="search" name="search" placeholder="Search"/>
+                <input id="submit-button" type="submit" value="submit"/>
+            </form>
+         </div>
+       </div>
     </div>
+   <!-- Search -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
 
 
 
@@ -79,4 +163,8 @@ $currentPageID = get_the_ID();
       </div>
     </div>
   </div>
+  -->
 </header>
+
+</body>
+

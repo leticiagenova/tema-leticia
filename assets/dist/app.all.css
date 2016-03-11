@@ -1320,13 +1320,15 @@ header #header-top,
 .main #header-top {
   background-color: #f6f6f6;
   border-bottom: 1px solid #eee;
-  padding: 10px 0px;
+  padding: 10px 0;
   color: #303030;
   font-size: 15px;
   font-family: "Source Sans Pro";
 }
 header .text-1,
-.main .text-1 {
+.main .text-1,
+header .text-2,
+.main .text-2 {
   *zoom: 1;
   float: left;
   clear: none;
@@ -1334,21 +1336,28 @@ header .text-1,
   width: 48.5%;
   margin-left: 0%;
   margin-right: 3%;
-  float: left;
 }
 header .text-1:before,
 .main .text-1:before,
+header .text-2:before,
+.main .text-2:before,
 header .text-1:after,
-.main .text-1:after {
+.main .text-1:after,
+header .text-2:after,
+.main .text-2:after {
   content: '';
   display: table;
 }
 header .text-1:after,
-.main .text-1:after {
+.main .text-1:after,
+header .text-2:after,
+.main .text-2:after {
   clear: both;
 }
 header .text-1:last-child,
-.main .text-1:last-child {
+.main .text-1:last-child,
+header .text-2:last-child,
+.main .text-2:last-child {
   margin-right: 0%;
 }
 header .text-2,
@@ -1356,76 +1365,226 @@ header .text-2,
   text-align: right;
   margin-right: 50px;
 }
-header #header-logo,
-.main #header-logo {
+header #header,
+.main #header {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  height: 60px;
+}
+header #logo,
+.main #logo {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 49.75%;
+  width: 13.6%;
   margin-left: 0%;
-  margin-right: 0.5%;
+  margin-right: 8%;
 }
-header #header-logo:before,
-.main #header-logo:before,
-header #header-logo:after,
-.main #header-logo:after {
+header #logo:before,
+.main #logo:before,
+header #logo:after,
+.main #logo:after {
   content: '';
   display: table;
 }
-header #header-logo:after,
-.main #header-logo:after {
+header #logo:after,
+.main #logo:after {
   clear: both;
 }
-header #header-logo:nth-child(2n),
-.main #header-logo:nth-child(2n) {
+header #logo:last-child,
+.main #logo:last-child {
   margin-right: 0%;
-  float: right;
 }
-header #header-logo:nth-child(2n+1),
-.main #header-logo:nth-child(2n+1) {
-  clear: both;
-}
-header #header-logo a,
-.main #header-logo a {
+header #logo a,
+.main #logo a {
   width: 100%;
-  height: 48px;
-  background: url("http://broker.commercegurus.com/wp-content/uploads/2015/10/broker-logo.png");
+  background-image: url("http://broker.commercegurus.com/wp-content/uploads/2015/10/broker-logo.png");
+  background-size: contain;
   background-repeat: no-repeat;
   float: left;
   text-indent: -9999em;
   overflow: hidden;
-  margin-top: 70px;
+  height: 60px;
 }
-header #header-menu,
-.main #header-menu {
+header div#info,
+.main div#info {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 48.5%;
+  width: 53.650000000000006%;
   margin-left: 0%;
   margin-right: 3%;
 }
-header #header-menu:before,
-.main #header-menu:before,
-header #header-menu:after,
-.main #header-menu:after {
+header div#info:before,
+.main div#info:before,
+header div#info:after,
+.main div#info:after {
   content: '';
   display: table;
 }
-header #header-menu:after,
-.main #header-menu:after {
+header div#info:after,
+.main div#info:after {
   clear: both;
 }
-header #header-menu:nth-child(2n),
-.main #header-menu:nth-child(2n) {
+header div#info:last-child,
+.main div#info:last-child {
+  margin-right: 0%;
+}
+header .info-2,
+.main .info-2 {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 22.75%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+header .info-2:before,
+.main .info-2:before,
+header .info-2:after,
+.main .info-2:after {
+  content: '';
+  display: table;
+}
+header .info-2:after,
+.main .info-2:after {
+  clear: both;
+}
+header .info-2:nth-child(6n),
+.main .info-2:nth-child(6n) {
   margin-right: 0%;
   float: right;
 }
-header #header-menu:nth-child(2n+1),
-.main #header-menu:nth-child(2n+1) {
+header .info-2:nth-child(6n+1),
+.main .info-2:nth-child(6n+1) {
   clear: both;
+}
+header .title-info,
+.main .title-info {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+header .title-info,
+.main .title-info,
+header .text-info,
+.main .text-info {
+  font-size: 15px;
+  font-family: "Source Sans Pro";
+}
+header .icon,
+.main .icon {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 3.1%;
+  margin-left: 0%;
+  margin-right: 2%;
+}
+header .icon:before,
+.main .icon:before,
+header .icon:after,
+.main .icon:after {
+  content: '';
+  display: table;
+}
+header .icon:after,
+.main .icon:after {
+  clear: both;
+}
+header .icon:last-child,
+.main .icon:last-child {
+  margin-right: 0%;
+}
+header .ion-ios-telephone-outline,
+.main .ion-ios-telephone-outline,
+header .ion-ios-location-outline,
+.main .ion-ios-location-outline,
+header .ion-ios-time-outline,
+.main .ion-ios-time-outline {
+  font-size: 35px;
+  color: #24a3d8;
+  margin-top: 5px;
+}
+header #search,
+.main #search {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 17.6%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+header #search:before,
+.main #search:before,
+header #search:after,
+.main #search:after {
+  content: '';
+  display: table;
+}
+header #search:after,
+.main #search:after {
+  clear: both;
+}
+header #search:last-child,
+.main #search:last-child {
+  margin-right: 0%;
+}
+header #submit-button,
+.main #submit-button {
+  margin-left: -60px;
+}
+@media only screen and (max-width: 800px) {
+  header #logo,
+  .main #logo,
+  header .info,
+  .main .info,
+  header .title-info,
+  .main .title-info,
+  header .text-1,
+  .main .text-1,
+  header .text-2,
+  .main .text-2 {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+  header #logo:first-child,
+  .main #logo:first-child,
+  header .info:first-child,
+  .main .info:first-child,
+  header .title-info:first-child,
+  .main .title-info:first-child,
+  header .text-1:first-child,
+  .main .text-1:first-child,
+  header .text-2:first-child,
+  .main .text-2:first-child {
+    margin-left: auto;
+  }
+  header #logo:last-child,
+  .main #logo:last-child,
+  header .info:last-child,
+  .main .info:last-child,
+  header .title-info:last-child,
+  .main .title-info:last-child,
+  header .text-1:last-child,
+  .main .text-1:last-child,
+  header .text-2:last-child,
+  .main .text-2:last-child {
+    margin-right: auto;
+  }
+  header .text-2,
+  .main .text-2 {
+    text-align: center;
+  }
 }
 footer {
   text-transform: uppercase;
