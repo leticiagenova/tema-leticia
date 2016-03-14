@@ -70,7 +70,7 @@ $currentPageID = get_the_ID();
             <div class="icon">
                 <i class="ion-ios-telephone-outline"></i>
             </div>
-            <div class="info-2">
+            <div class="info-2" id="phone-mail">
                 <div class="title-info">
                   <a href="callto:1800 234 567">1800 234 567</a>
                </div>
@@ -94,7 +94,7 @@ $currentPageID = get_the_ID();
             <div class="icon">
                 <i class="ion-ios-time-outline"> </i>
             </div>
-           <div class="info-2">
+           <div class="info-2"  id="text-date">
                 <div class="title-info">
                     <p>07:30 – 19:00</p>
                 </div>
@@ -105,13 +105,18 @@ $currentPageID = get_the_ID();
         </div>
 
     <!-- Search -->
-         <div id="search">
-            <form action="#">
-                <input id="search-box" type="search" name="search" placeholder="Search"/>
-                <input id="submit-button" type="submit" value="submit"/>
-            </form>
-         </div>
-       </div>
+
+          <div id="search">
+              <form action="#">
+                  <input id="search-text" type="text" name="search" placeholder="Search...">
+                  <button id="submit-button type="submit"><i class="ion-ios-search-strong"></i></button>
+              </form>
+          </div>
+
+
+
+
+      </div>
     </div>
    <!-- Search -->
 

@@ -40,13 +40,15 @@ header, .main
     col(11/20)
 
 
+
   .info-2
-    col(5/20, cycle: 6)
-   
+    col(5/20)
+
 
   .title-info
     font-weight bold
     margin-bottom 5px
+    font-size 50px
 
   .title-info, .text-info
     font-size 15px
@@ -57,15 +59,34 @@ header, .main
 
   .ion-ios-telephone-outline, .ion-ios-location-outline, .ion-ios-time-outline
     font-size 35px
-    color: #24A3D8
+    color #24A3D8
     margin-top 5px
 
+  div#text-date
+    margin-left 12px
+
+  div#phone-mail
+    margin-left 5px
 
   #search
     col(4/20)
 
+  input#search-text
+    border 1px solid #eeeeee
+    width 250px
+    border-radius 2px
+    padding 15px 30px 15px 10px
+    margin-top -5px
+    font-family "Source Sans Pro"
+    font-size 18px
+
   #submit-button
-    margin-left -60px
+    margin-left -100px
+
+  i.ion-ios-search-strong
+    color red
+    font-size 18px
+
 
   +below(3)
     #logo, .info, .title-info, .text-1, .text-2

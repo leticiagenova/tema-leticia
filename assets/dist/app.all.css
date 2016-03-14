@@ -1453,19 +1453,15 @@ header .info-2:after,
 .main .info-2:after {
   clear: both;
 }
-header .info-2:nth-child(6n),
-.main .info-2:nth-child(6n) {
+header .info-2:last-child,
+.main .info-2:last-child {
   margin-right: 0%;
-  float: right;
-}
-header .info-2:nth-child(6n+1),
-.main .info-2:nth-child(6n+1) {
-  clear: both;
 }
 header .title-info,
 .main .title-info {
   font-weight: bold;
   margin-bottom: 5px;
+  font-size: 50px;
 }
 header .title-info,
 .main .title-info,
@@ -1509,6 +1505,14 @@ header .ion-ios-time-outline,
   color: #24a3d8;
   margin-top: 5px;
 }
+header div#text-date,
+.main div#text-date {
+  margin-left: 12px;
+}
+header div#phone-mail,
+.main div#phone-mail {
+  margin-left: 5px;
+}
 header #search,
 .main #search {
   *zoom: 1;
@@ -1534,9 +1538,24 @@ header #search:last-child,
 .main #search:last-child {
   margin-right: 0%;
 }
+header input#search-text,
+.main input#search-text {
+  border: 1px solid #eee;
+  width: 250px;
+  border-radius: 2px;
+  padding: 15px 30px 15px 10px;
+  margin-top: -5px;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+}
 header #submit-button,
 .main #submit-button {
-  margin-left: -60px;
+  margin-left: -100px;
+}
+header i.ion-ios-search-strong,
+.main i.ion-ios-search-strong {
+  color: #f00;
+  font-size: 18px;
 }
 @media only screen and (max-width: 800px) {
   header #logo,
