@@ -67,41 +67,45 @@ $currentPageID = get_the_ID();
 
   <!-- Info header Contact, Local, Date -->
         <div id="info">
-            <div class="icon">
-                <i class="ion-ios-telephone-outline"></i>
-            </div>
-            <div class="info-2" id="phone-mail">
-                <div class="title-info">
-                  <a href="callto:1800 234 567">1800 234 567</a>
-               </div>
-               <div class="text-info">
-                  <a href="mailto:info@example.com">info@example.com</a>
-               </div>
-            </div>
-
-            <div class="icon">
-                <i class="ion-ios-location-outline"></i>
-            </div>
-           <div class="info-2">
-               <div class="title-info">
-                  <p>Goldsmith Hall,</p>
-               </div>
-                <div class="text-info">
-                   <p>New York, NY 90210 </p>
+            <div class="info-col">
+                <div class="icon">
+                    <i class="ion-ios-telephone-outline"></i>
+                </div>
+                <div class="info-2" id="phone-mail">
+                    <div class="title-info">
+                        <a href="callto:1800 234 567">1800 234 567</a>
+                    </div>
+                    <div class="text-info">
+                        <a href="mailto:info@example.com">info@example.com</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="icon">
-                <i class="ion-ios-time-outline"> </i>
+            <div class="info-col">
+                <div class="icon">
+                    <i class="ion-ios-location-outline"></i>
+                </div>
+               <div class="info-2">
+                   <div class="title-info">
+                      <p>Goldsmith Hall,</p>
+                   </div>
+                    <div class="text-info">
+                       <p>New York, NY 90210 </p>
+                    </div>
+                </div>
             </div>
-           <div class="info-2"  id="text-date">
-                <div class="title-info">
-                    <p>07:30 – 19:00</p>
+            <div class="info-col">
+                <div class="icon">
+                    <i class="ion-ios-time-outline"> </i>
                 </div>
-                <div class="text-info">
-                    <p>Monday to Friday</p>
-                </div>
-           </div>
+               <div class="info-2"  id="text-date">
+                    <div class="title-info">
+                        <p>07:30 – 19:00</p>
+                    </div>
+                    <div class="text-info">
+                        <p>Monday to Friday</p>
+                    </div>
+               </div>
+            </div>
         </div>
 
     <!-- Search -->
@@ -109,7 +113,7 @@ $currentPageID = get_the_ID();
           <div id="search">
               <form action="#">
                   <input id="search-text" type="text" name="search" placeholder="Search...">
-                  <button id="submit-button type="submit"><i class="ion-ios-search-strong"></i></button>
+                  <button id="submit-button" type="submit"><i class="ion-ios-search-strong"></i></button>
               </form>
           </div>
 

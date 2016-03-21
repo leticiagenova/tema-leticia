@@ -38,12 +38,15 @@ header, .main
 
   div#info
     col(11/20)
-
-
-
-  .info-2
-    col(5/20)
-
+    height 60px
+    .info-col
+      col(1/3, gutter: 3)
+      height 60px
+      .icon
+        col(1/4, cycle: 2, gutter: 1)
+        text-align center
+      .info-2
+        col(3/4, cycle: 2)
 
   .title-info
     font-weight bold
@@ -54,38 +57,45 @@ header, .main
     font-size 15px
     font-family "Source Sans Pro"
 
-  .icon
-    col(1/20, gutter: 2px)
-
   .ion-ios-telephone-outline, .ion-ios-location-outline, .ion-ios-time-outline
     font-size 35px
     color #24A3D8
     margin-top 5px
 
-  div#text-date
-    margin-left 12px
-
-  div#phone-mail
-    margin-left 5px
-
   #search
     col(4/20)
+    height 60px
+    form
+      width 100%
+      position relative
+      border 1px solid #eeeeee
+      border-radius 2px
+      padding 10px 30px 10px 10px
+      &:hover
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 3px #9ecaed;
 
   input#search-text
-    border 1px solid #eeeeee
-    width 250px
-    border-radius 2px
-    padding 15px 30px 15px 10px
-    margin-top -5px
+    border 0
+    width 100%
     font-family "Source Sans Pro"
     font-size 18px
+    outline none
 
   #submit-button
-    margin-left -100px
+    position absolute
+    right 10px
+    top 10px
+    border-style none
+    background-color transparent
+
 
   i.ion-ios-search-strong
-    color red
+    color #333333
     font-size 18px
+    cursor hand
+    font-weight 700
 
 
   +below(3)
