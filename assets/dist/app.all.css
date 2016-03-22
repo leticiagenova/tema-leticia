@@ -1325,6 +1325,12 @@ header #header-top,
   font-size: 15px;
   font-family: "Source Sans Pro";
 }
+@media only screen and (max-width: 800px) {
+  header #header-top,
+  .main #header-top {
+    display: none;
+  }
+}
 header .text-1,
 .main .text-1,
 header .text-2,
@@ -1406,6 +1412,12 @@ header #logo a,
   text-indent: -9999em;
   overflow: hidden;
   height: 60px;
+}
+@media only screen and (max-width: 800px) {
+  header #logo a,
+  .main #logo a {
+    margin-top: 150px;
+  }
 }
 header div#info,
 .main div#info {
@@ -1607,16 +1619,18 @@ header i.ion-ios-search-strong,
   font-weight: 700;
 }
 @media only screen and (max-width: 800px) {
-  header #logo,
-  .main #logo,
   header .info,
   .main .info,
   header .title-info,
   .main .title-info,
-  header .text-1,
-  .main .text-1,
-  header .text-2,
-  .main .text-2 {
+  header .text-info,
+  .main .text-info,
+  header .ion-ios-telephone-outline,
+  .main .ion-ios-telephone-outline,
+  header .ion-ios-location-outline,
+  .main .ion-ios-location-outline,
+  header .ion-ios-time-outline,
+  .main .ion-ios-time-outline {
     display: block;
     clear: both;
     float: none;
@@ -1625,33 +1639,33 @@ header i.ion-ios-search-strong,
     margin-right: auto;
     margin-bottom: 10px;
   }
-  header #logo:first-child,
-  .main #logo:first-child,
   header .info:first-child,
   .main .info:first-child,
   header .title-info:first-child,
   .main .title-info:first-child,
-  header .text-1:first-child,
-  .main .text-1:first-child,
-  header .text-2:first-child,
-  .main .text-2:first-child {
+  header .text-info:first-child,
+  .main .text-info:first-child,
+  header .ion-ios-telephone-outline:first-child,
+  .main .ion-ios-telephone-outline:first-child,
+  header .ion-ios-location-outline:first-child,
+  .main .ion-ios-location-outline:first-child,
+  header .ion-ios-time-outline:first-child,
+  .main .ion-ios-time-outline:first-child {
     margin-left: auto;
   }
-  header #logo:last-child,
-  .main #logo:last-child,
   header .info:last-child,
   .main .info:last-child,
   header .title-info:last-child,
   .main .title-info:last-child,
-  header .text-1:last-child,
-  .main .text-1:last-child,
-  header .text-2:last-child,
-  .main .text-2:last-child {
+  header .text-info:last-child,
+  .main .text-info:last-child,
+  header .ion-ios-telephone-outline:last-child,
+  .main .ion-ios-telephone-outline:last-child,
+  header .ion-ios-location-outline:last-child,
+  .main .ion-ios-location-outline:last-child,
+  header .ion-ios-time-outline:last-child,
+  .main .ion-ios-time-outline:last-child {
     margin-right: auto;
-  }
-  header .text-2,
-  .main .text-2 {
-    text-align: center;
   }
 }
 footer {

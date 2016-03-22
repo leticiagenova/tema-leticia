@@ -11,6 +11,8 @@ header, .main
     color #303030
     font-size 15px
     font-family "Source Sans Pro"
+    +below(3)
+      display none
 
   .text-1, .text-2
     col(1/2)
@@ -35,6 +37,8 @@ header, .main
       text-indent -9999em
       overflow hidden
       height 60px
+      +below(3)
+        margin-top 150px
 
   div#info
     col(11/20)
@@ -99,8 +103,6 @@ header, .main
 
 
   +below(3)
-    #logo, .info, .title-info, .text-1, .text-2
+    .info, .title-info, .text-info, .ion-ios-telephone-outline, .ion-ios-location-outline, .ion-ios-time-outline
       stack()
       margin-bottom 10px
-    .text-2
-      text-align center
