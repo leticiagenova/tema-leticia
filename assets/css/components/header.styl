@@ -38,7 +38,7 @@ header, .main
       overflow hidden
       height 60px
       +below(3)
-        margin-top 150px
+        margin-top 200px
 
   div#info
     col(11/20)
@@ -79,6 +79,9 @@ header, .main
         outline: none;
         border-color: #9ecaed;
         box-shadow: 0 0 3px #9ecaed;
+    +below(3)
+      col(9/10)
+      margin-top -115px
 
   input#search-text
     border 0
@@ -86,6 +89,9 @@ header, .main
     font-family "Source Sans Pro"
     font-size 18px
     outline none
+    +below(3)
+      font-size 14px
+
 
   #submit-button
     position absolute
@@ -99,10 +105,10 @@ header, .main
     color #333333
     font-size 18px
     cursor hand
-    font-weight 700
-
 
   +below(3)
-    .info, .title-info, .text-info, .ion-ios-telephone-outline, .ion-ios-location-outline, .ion-ios-time-outline
-      stack()
+    .icon .info-2
+    stack()
       margin-bottom 10px
+
+

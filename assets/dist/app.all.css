@@ -1416,7 +1416,7 @@ header #logo a,
 @media only screen and (max-width: 800px) {
   header #logo a,
   .main #logo a {
-    margin-top: 150px;
+    margin-top: 200px;
   }
 }
 header div#info,
@@ -1595,6 +1595,34 @@ header #search form:hover,
   border-color: #9ecaed;
   box-shadow: 0 0 3px #9ecaed;
 }
+@media only screen and (max-width: 800px) {
+  header #search,
+  .main #search {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 89.7%;
+    margin-left: 0%;
+    margin-right: 3%;
+    margin-top: -115px;
+  }
+  header #search:before,
+  .main #search:before,
+  header #search:after,
+  .main #search:after {
+    content: '';
+    display: table;
+  }
+  header #search:after,
+  .main #search:after {
+    clear: both;
+  }
+  header #search:last-child,
+  .main #search:last-child {
+    margin-right: 0%;
+  }
+}
 header input#search-text,
 .main input#search-text {
   border: 0;
@@ -1602,6 +1630,12 @@ header input#search-text,
   font-family: "Source Sans Pro";
   font-size: 18px;
   outline: none;
+}
+@media only screen and (max-width: 800px) {
+  header input#search-text,
+  .main input#search-text {
+    font-size: 14px;
+  }
 }
 header #submit-button,
 .main #submit-button {
@@ -1616,56 +1650,13 @@ header i.ion-ios-search-strong,
   color: #333;
   font-size: 18px;
   cursor: hand;
-  font-weight: 700;
 }
 @media only screen and (max-width: 800px) {
-  header .info,
-  .main .info,
-  header .title-info,
-  .main .title-info,
-  header .text-info,
-  .main .text-info,
-  header .ion-ios-telephone-outline,
-  .main .ion-ios-telephone-outline,
-  header .ion-ios-location-outline,
-  .main .ion-ios-location-outline,
-  header .ion-ios-time-outline,
-  .main .ion-ios-time-outline {
-    display: block;
-    clear: both;
-    float: none;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  header .icon .info-2,
+  .main .icon .info-2,
+  header stack(),
+  .main stack() {
     margin-bottom: 10px;
-  }
-  header .info:first-child,
-  .main .info:first-child,
-  header .title-info:first-child,
-  .main .title-info:first-child,
-  header .text-info:first-child,
-  .main .text-info:first-child,
-  header .ion-ios-telephone-outline:first-child,
-  .main .ion-ios-telephone-outline:first-child,
-  header .ion-ios-location-outline:first-child,
-  .main .ion-ios-location-outline:first-child,
-  header .ion-ios-time-outline:first-child,
-  .main .ion-ios-time-outline:first-child {
-    margin-left: auto;
-  }
-  header .info:last-child,
-  .main .info:last-child,
-  header .title-info:last-child,
-  .main .title-info:last-child,
-  header .text-info:last-child,
-  .main .text-info:last-child,
-  header .ion-ios-telephone-outline:last-child,
-  .main .ion-ios-telephone-outline:last-child,
-  header .ion-ios-location-outline:last-child,
-  .main .ion-ios-location-outline:last-child,
-  header .ion-ios-time-outline:last-child,
-  .main .ion-ios-time-outline:last-child {
-    margin-right: auto;
   }
 }
 footer {
