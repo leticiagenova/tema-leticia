@@ -115,7 +115,11 @@ $currentPageID = get_the_ID();
                   <input id="search-text" type="text" name="search" placeholder="Search...">
                   <button id="submit-button" type="submit"><i class="ion-ios-search-strong"></i></button>
               </form>
+              <div id="menu-mobile">
+                  <i class="ion-navicon-round"></i>
+              </div>
           </div>
+
 
 
 

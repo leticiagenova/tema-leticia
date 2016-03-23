@@ -1414,9 +1414,23 @@ header #logo a,
   height: 60px;
 }
 @media only screen and (max-width: 800px) {
-  header #logo a,
-  .main #logo a {
-    margin-top: 200px;
+  header #logo,
+  .main #logo {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  header #logo:first-child,
+  .main #logo:first-child {
+    margin-left: auto;
+  }
+  header #logo:last-child,
+  .main #logo:last-child {
+    margin-right: auto;
   }
 }
 header div#info,
@@ -1470,6 +1484,25 @@ header div#info .info-col:after,
 header div#info .info-col:last-child,
 .main div#info .info-col:last-child {
   margin-right: 0%;
+}
+@media only screen and (max-width: 800px) {
+  header div#info .info-col,
+  .main div#info .info-col {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header div#info .info-col:first-child,
+  .main div#info .info-col:first-child {
+    margin-left: auto;
+  }
+  header div#info .info-col:last-child,
+  .main div#info .info-col:last-child {
+    margin-right: auto;
+  }
 }
 header div#info .info-col .icon,
 .main div#info .info-col .icon {
@@ -1598,14 +1631,28 @@ header #search form:hover,
 @media only screen and (max-width: 800px) {
   header #search,
   .main #search {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     *zoom: 1;
     float: left;
     clear: none;
     text-align: inherit;
-    width: 89.7%;
+    width: 79.4%;
     margin-left: 0%;
     margin-right: 3%;
-    margin-top: -115px;
+    margin-top: 130px;
+  }
+  header #search:first-child,
+  .main #search:first-child {
+    margin-left: auto;
+  }
+  header #search:last-child,
+  .main #search:last-child {
+    margin-right: auto;
   }
   header #search:before,
   .main #search:before,
@@ -1618,9 +1665,14 @@ header #search form:hover,
   .main #search:after {
     clear: both;
   }
-  header #search:last-child,
-  .main #search:last-child {
+  header #search:nth-child(2n),
+  .main #search:nth-child(2n) {
     margin-right: 0%;
+    float: right;
+  }
+  header #search:nth-child(2n+1),
+  .main #search:nth-child(2n+1) {
+    clear: both;
   }
 }
 header input#search-text,
@@ -1651,12 +1703,35 @@ header i.ion-ios-search-strong,
   font-size: 18px;
   cursor: hand;
 }
-@media only screen and (max-width: 800px) {
-  header .icon .info-2,
-  .main .icon .info-2,
-  header stack(),
-  .main stack() {
-    margin-bottom: 10px;
+header #menu-mobile,
+.main #menu-mobile {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 17.6%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+header #menu-mobile:before,
+.main #menu-mobile:before,
+header #menu-mobile:after,
+.main #menu-mobile:after {
+  content: '';
+  display: table;
+}
+header #menu-mobile:after,
+.main #menu-mobile:after {
+  clear: both;
+}
+header #menu-mobile:last-child,
+.main #menu-mobile:last-child {
+  margin-right: 0%;
+}
+@media only screen and (min-width: 800px) {
+  header #menu-mobile,
+  .main #menu-mobile {
+    display: none;
   }
 }
 footer {

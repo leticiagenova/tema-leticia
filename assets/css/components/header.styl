@@ -37,8 +37,9 @@ header, .main
       text-indent -9999em
       overflow hidden
       height 60px
-      +below(3)
-        margin-top 200px
+    +below(3)
+      stack()
+      margin-bottom 30px
 
   div#info
     col(11/20)
@@ -46,11 +47,14 @@ header, .main
     .info-col
       col(1/3, gutter: 3)
       height 60px
+      +below(3)
+        stack()
       .icon
         col(1/4, cycle: 2, gutter: 1)
         text-align center
       .info-2
         col(3/4, cycle: 2)
+
 
   .title-info
     font-weight bold
@@ -80,8 +84,9 @@ header, .main
         border-color: #9ecaed;
         box-shadow: 0 0 3px #9ecaed;
     +below(3)
-      col(9/10)
-      margin-top -115px
+      stack()
+      col(8/10, cycle: 2)
+      margin-top 130px
 
   input#search-text
     border 0
@@ -106,9 +111,8 @@ header, .main
     font-size 18px
     cursor hand
 
-  +below(3)
-    .icon .info-2
-    stack()
-      margin-bottom 10px
+  #menu-mobile
+    col(2/10)
 
-
+    +above(4)
+      display none
