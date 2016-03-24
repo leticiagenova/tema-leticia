@@ -54,7 +54,7 @@ $currentPageID = get_the_ID();
   <div id="header-top">
     <div class="container">
       <div class="text-1">Welcome to Broker Financial Services, we have over 20 years of expertise </div>
-      <div class="text-2">25 de fevereiro de 2016 </div>
+      <div class="text-2">25th February 2016 </div>
     </div>
   </div>
 
@@ -64,6 +64,7 @@ $currentPageID = get_the_ID();
          <div id="logo">
             <a href="/"><?= get_bloginfo('name') ?></a>
          </div>
+
 
   <!-- Info header Contact, Local, Date -->
         <div id="info">
@@ -109,24 +110,23 @@ $currentPageID = get_the_ID();
         </div>
 
     <!-- Search -->
-
           <div id="search">
               <form action="#">
                   <input id="search-text" type="text" name="search" placeholder="Search...">
                   <button id="submit-button" type="submit"><i class="ion-ios-search-strong"></i></button>
               </form>
-              <div id="menu-mobile">
-                  <i class="ion-navicon-round"></i>
-              </div>
           </div>
+    <!-- Fim Search -->
+    <!-- Mobile header -->
+
+       <div id="info-tablet">
 
 
-
+       </div>
 
 
       </div>
     </div>
-   <!-- Search -->
 
 
 
