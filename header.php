@@ -64,6 +64,13 @@ $currentPageID = get_the_ID();
          <div id="logo">
             <a href="/"><?= get_bloginfo('name') ?></a>
          </div>
+          <!-- Mobile header until 800px -->
+          <div class="menu-ipad">
+             <div class="icon-mobile">
+                 <i class="ion-search"></i>
+                 <i class="ion-navicon-round"></i>
+              </div>
+          </div>
 
 
   <!-- Info header Contact, Local, Date -->
@@ -117,13 +124,10 @@ $currentPageID = get_the_ID();
               </form>
           </div>
     <!-- Fim Search -->
-    <!-- Mobile header -->
-
-       <div id="info-tablet">
 
 
-       </div>
 
+          </div>
 
       </div>
     </div>

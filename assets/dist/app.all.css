@@ -1431,6 +1431,12 @@ header #header,
   margin-bottom: 50px;
   height: 60px;
 }
+@media only screen and (max-width: 1050px) {
+  header #header,
+  .main #header {
+    margin-top: 15px;
+  }
+}
 header #logo,
 .main #logo {
   *zoom: 1;
@@ -1468,13 +1474,39 @@ header #logo a,
   height: 60px;
 }
 @media only screen and (max-width: 1050px) {
-  header #logo a,
-  .main #logo a {
-    width: 153px;
-    height: 35px;
-    margin-top: -25px;
+  header #logo,
+  .main #logo {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 18.4%;
+    margin-left: 0%;
+    margin-right: 2%;
+  }
+  header #logo:before,
+  .main #logo:before,
+  header #logo:after,
+  .main #logo:after {
+    content: '';
+    display: table;
+  }
+  header #logo:after,
+  .main #logo:after {
+    clear: both;
+  }
+  header #logo:nth-child(2n),
+  .main #logo:nth-child(2n) {
+    margin-right: 0%;
+    float: right;
+  }
+  header #logo:nth-child(2n+1),
+  .main #logo:nth-child(2n+1) {
+    clear: both;
   }
 }
+header .,
+.main .,
 header div#info,
 .main div#info {
   *zoom: 1;
@@ -1486,27 +1518,39 @@ header div#info,
   margin-right: 3%;
   height: 60px;
 }
+header .:before,
+.main .:before,
 header div#info:before,
 .main div#info:before,
+header .:after,
+.main .:after,
 header div#info:after,
 .main div#info:after {
   content: '';
   display: table;
 }
+header .:after,
+.main .:after,
 header div#info:after,
 .main div#info:after {
   clear: both;
 }
+header .:last-child,
+.main .:last-child,
 header div#info:last-child,
 .main div#info:last-child {
   margin-right: 0%;
 }
 @media only screen and (max-width: 1050px) {
+  header .,
+  .main .,
   header div#info,
   .main div#info {
     display: none;
   }
 }
+header . .info-col,
+.main . .info-col,
 header div#info .info-col,
 .main div#info .info-col {
   *zoom: 1;
@@ -1518,21 +1562,31 @@ header div#info .info-col,
   margin-right: 3%;
   height: 60px;
 }
+header . .info-col:before,
+.main . .info-col:before,
 header div#info .info-col:before,
 .main div#info .info-col:before,
+header . .info-col:after,
+.main . .info-col:after,
 header div#info .info-col:after,
 .main div#info .info-col:after {
   content: '';
   display: table;
 }
+header . .info-col:after,
+.main . .info-col:after,
 header div#info .info-col:after,
 .main div#info .info-col:after {
   clear: both;
 }
+header . .info-col:last-child,
+.main . .info-col:last-child,
 header div#info .info-col:last-child,
 .main div#info .info-col:last-child {
   margin-right: 0%;
 }
+header . .info-col .icon,
+.main . .info-col .icon,
 header div#info .info-col .icon,
 .main div#info .info-col .icon {
   *zoom: 1;
@@ -1544,26 +1598,38 @@ header div#info .info-col .icon,
   margin-right: 1%;
   text-align: center;
 }
+header . .info-col .icon:before,
+.main . .info-col .icon:before,
 header div#info .info-col .icon:before,
 .main div#info .info-col .icon:before,
+header . .info-col .icon:after,
+.main . .info-col .icon:after,
 header div#info .info-col .icon:after,
 .main div#info .info-col .icon:after {
   content: '';
   display: table;
 }
+header . .info-col .icon:after,
+.main . .info-col .icon:after,
 header div#info .info-col .icon:after,
 .main div#info .info-col .icon:after {
   clear: both;
 }
+header . .info-col .icon:nth-child(2n),
+.main . .info-col .icon:nth-child(2n),
 header div#info .info-col .icon:nth-child(2n),
 .main div#info .info-col .icon:nth-child(2n) {
   margin-right: 0%;
   float: right;
 }
+header . .info-col .icon:nth-child(2n+1),
+.main . .info-col .icon:nth-child(2n+1),
 header div#info .info-col .icon:nth-child(2n+1),
 .main div#info .info-col .icon:nth-child(2n+1) {
   clear: both;
 }
+header . .info-col .info-2,
+.main . .info-col .info-2,
 header div#info .info-col .info-2,
 .main div#info .info-col .info-2 {
   *zoom: 1;
@@ -1574,22 +1640,32 @@ header div#info .info-col .info-2,
   margin-left: 0%;
   margin-right: 3%;
 }
+header . .info-col .info-2:before,
+.main . .info-col .info-2:before,
 header div#info .info-col .info-2:before,
 .main div#info .info-col .info-2:before,
+header . .info-col .info-2:after,
+.main . .info-col .info-2:after,
 header div#info .info-col .info-2:after,
 .main div#info .info-col .info-2:after {
   content: '';
   display: table;
 }
+header . .info-col .info-2:after,
+.main . .info-col .info-2:after,
 header div#info .info-col .info-2:after,
 .main div#info .info-col .info-2:after {
   clear: both;
 }
+header . .info-col .info-2:nth-child(2n),
+.main . .info-col .info-2:nth-child(2n),
 header div#info .info-col .info-2:nth-child(2n),
 .main div#info .info-col .info-2:nth-child(2n) {
   margin-right: 0%;
   float: right;
 }
+header . .info-col .info-2:nth-child(2n+1),
+.main . .info-col .info-2:nth-child(2n+1),
 header div#info .info-col .info-2:nth-child(2n+1),
 .main div#info .info-col .info-2:nth-child(2n+1) {
   clear: both;
@@ -1684,6 +1760,12 @@ header i.ion-ios-search-strong,
   color: #333;
   font-size: 18px;
   cursor: hand;
+}
+.ion-navicon-round,
+.ion-search {
+  margin-top: 10px;
+  font-size: 25px;
+  color: #000;
 }
 footer {
   text-transform: uppercase;

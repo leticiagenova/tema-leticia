@@ -34,6 +34,9 @@ header, .main
     margin-top 40px
     margin-bottom 50px
     height 60px
+    +below(4)
+     margin-top 15px
+    
 
   #logo
     col(4/20, gutter: 8)
@@ -46,10 +49,9 @@ header, .main
       text-indent -9999em
       overflow hidden
       height 60px
-      +below(4)
-          width 153px
-          height 35px
-          margin-top -25px
+    +below(4)
+      col(2/10, cycle: 2, gutter: 2)
+  .
 
   div#info
     col(11/20)
@@ -116,7 +118,14 @@ header, .main
     font-size 18px
     cursor hand
 
-  //Mobile //
+
+  //Mobile Until 800px //
+
+.ion-navicon-round, .ion-search
+  margin-top 10px
+  font-size 25px
+  color #000000
+
 
 
 
