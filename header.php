@@ -23,7 +23,8 @@ $currentPageID = get_the_ID();
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 <!--Fonts -->
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
 
   <!-- /Fonts -->
 <!-- Icons -->
@@ -67,11 +68,10 @@ $currentPageID = get_the_ID();
           <!-- Mobile header until 800px -->
           <div class="menu-ipad">
              <div class="icon-mobile">
-                 <i class="ion-search"></i>
-                 <i class="ion-navicon-round"></i>
+                 <i class="ion-android-search"></i>
+                 <i class="ion-navicon"></i>
               </div>
           </div>
-
 
   <!-- Info header Contact, Local, Date -->
         <div id="info">
@@ -79,7 +79,7 @@ $currentPageID = get_the_ID();
                 <div class="icon">
                     <i class="ion-ios-telephone-outline"></i>
                 </div>
-                <div class="info-2" id="phone-mail">
+                <div class="info-detail">
                     <div class="title-info">
                         <a href="callto:1800 234 567">1800 234 567</a>
                     </div>
@@ -92,7 +92,7 @@ $currentPageID = get_the_ID();
                 <div class="icon">
                     <i class="ion-ios-location-outline"></i>
                 </div>
-               <div class="info-2">
+               <div class="info-detail">
                    <div class="title-info">
                       <p>Goldsmith Hall,</p>
                    </div>
@@ -105,7 +105,7 @@ $currentPageID = get_the_ID();
                 <div class="icon">
                     <i class="ion-ios-time-outline"> </i>
                 </div>
-               <div class="info-2"  id="text-date">
+               <div class="info-detail"  id="text-date">
                     <div class="title-info">
                         <p>07:30 – 19:00</p>
                     </div>
