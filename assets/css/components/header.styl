@@ -10,7 +10,7 @@ header, .main
     padding 10px 0
     color #303030
     font-size 1.2em
-    font-family "Source Sans Pro"
+    {FONT_LIGHT}
     +below(3)
       display none
 
@@ -18,13 +18,12 @@ header, .main
     col(1/2)
 
   .text-1
-    +below(4)
+    +below(1130px)
       col(2/3)
 
   .text-2
-    +below(4)
+    +below(1130px)
       col(1/3)
-
 
   .text-2
     text-align right
@@ -36,27 +35,25 @@ header, .main
     height 60px
     +below(4)
      margin-top 15px
-    
 
   #logo
     col(4/20, gutter: 8)
     a
       width 100%
+      height 48px
       background-image url(http://broker.commercegurus.com/wp-content/uploads/2015/10/broker-logo.png)
       background-size contain
       background-repeat no-repeat
       float left
       text-indent -9999em
       overflow hidden
-      height 60px
     +below(4)
       col(2/10, cycle: 2, gutter: 2)
-  .
 
   div#info
     col(11/20)
     height 60px
-    +below(4)
+    +below(1100px)
       display none
     .info-col
       col(1/3, gutter: 3)
@@ -64,66 +61,69 @@ header, .main
       .icon
         col(1/4, cycle: 2, gutter: 1)
         text-align center
-      .info-2
+      .info-detail
         col(3/4, cycle: 2)
 
   .title-info
-    font-weight bold
     margin-bottom 5px
     font-size 50px
+    {FONT_NORMAL}
+
+  .text-info
+    {FONT_LIGHT}
+
 
   .title-info, .text-info
     font-size 15px
     font-family "Source Sans Pro"
+    color $contact
 
   .ion-ios-telephone-outline, .ion-ios-location-outline, .ion-ios-time-outline
     font-size 35px
-    color #24A3D8
+    color $icon
     margin-top 5px
 
   #search
     col(4/20)
-    height 60px
-    form
-      width 100%
-      position relative
-      border 1px solid #eeeeee
-      border-radius 2px
-      padding 10px 30px 10px 10px
-      &:hover
-        outline: none;
-        border-color: #9ecaed;
-        box-shadow: 0 0 3px #9ecaed;
-      +below(4)
-        display none
+    position relative
+    +below(1101px)
+      display none
 
   input#search-text
-    border 0
+    border 1px solid #eeeeee
+    border-radius 2px
     width 100%
-    font-family "Source Sans Pro"
-    font-size 18px
+    {FONT_LIGHT}
+    font-size 17px
     outline none
-
-
+    padding 10px 14px 16px 12px
+    margin-top -9px
+    &:focus
+      border solid 1px #cccccc
+      box-shadow 0 1px 1px rgba(0, 0, 0, 0.06)
   #submit-button
     position absolute
-    right 10px
-    top 10px
     border-style none
     background-color transparent
+    top 1px
+    right -20px
 
 
   i.ion-ios-search-strong
-    color #333333
+    color #666666
     font-size 18px
     cursor hand
 
 
-  //Mobile Until 800px //
+//Mobile Until 800px //
 
-.ion-navicon-round, .ion-search
+.menu-ipad
+  +above(1101px)
+    display none
+
+.ion-navicon, .ion-android-search
   margin-top 10px
-  font-size 25px
+  font-size 20px
   color #000000
 
 
