@@ -613,7 +613,7 @@ audio:not([controls]),
   display: none;
 }
 body {
-  font-family: 'Titillium Web';
+  font-family: 'Source Sans Pro';
   font-weight: 400;
   font-size: 13px;
 }
@@ -636,7 +636,7 @@ body a {
 }
 body b,
 body strong {
-  font-family: 'Titillium Web';
+  font-family: 'Source Sans Pro';
   font-weight: 700;
 }
 body i {
@@ -706,7 +706,7 @@ body i {
   color: #a4bba1;
   font-size: 40px;
   margin-bottom: 20px;
-  font-family: 'Titillium Web';
+  font-family: 'Source Sans Pro';
   font-weight: 600;
 }
 .funky-header small {
@@ -786,7 +786,7 @@ body i {
   margin-left: 0;
 }
 .content-generic .bd .time {
-  font-family: 'Titillium Web';
+  font-family: 'Source Sans Pro';
   font-weight: 300;
   color: #80a4a7;
   font-size: 14px;
@@ -796,7 +796,7 @@ body i {
   color: #415a68;
   text-transform: uppercase;
   font-size: 13px;
-  font-family: 'Titillium Web';
+  font-family: 'Source Sans Pro';
   font-weight: 400;
   -webkit-transition: all 0.125s ease-in-out;
   transition: all 0.125s ease-in-out;
@@ -808,7 +808,7 @@ body i {
   color: #a4bba1;
 }
 .content-generic .bd .page-title a {
-  font-family: 'Titillium Web';
+  font-family: 'Source Sans Pro';
   font-weight: 600;
   font-size: 15px;
   color: #415a68;
@@ -817,7 +817,7 @@ body i {
   color: #a4bba1;
 }
 .content-generic .bd .page-title a em {
-  font-family: 'Titillium Web';
+  font-family: 'Source Sans Pro';
   font-weight: 300;
   text-transform: none;
   color: #999;
@@ -866,7 +866,7 @@ body i {
 }
 .contact-banner .row .col h4 {
   color: #a4bba1;
-  font-family: 'Titillium Web';
+  font-family: 'Source Sans Pro';
   font-weight: 600;
   font-size: 19px;
   text-transform: uppercase;
@@ -874,7 +874,7 @@ body i {
 }
 .contact-banner .row .col a {
   color: #415a68;
-  font-family: 'Titillium Web';
+  font-family: 'Source Sans Pro';
   font-weight: 600;
   font-size: 17px;
 }
@@ -889,7 +889,7 @@ body i {
   padding-bottom: 20px;
 }
 .btn {
-  font-family: 'Titillium Web';
+  font-family: 'Source Sans Pro';
   font-weight: 400;
   box-sizing: border-box;
   display: inline-block;
@@ -1060,7 +1060,7 @@ ul.menu li {
 h2.title {
   font-size: 4em;
   text-transform: uppercase;
-  font-family: 'Titillium Web';
+  font-family: 'Source Sans Pro';
   font-weight: 300;
 }
 @media only screen and (max-width: 1050px) {
@@ -1080,7 +1080,7 @@ h2.title::before {
   margin-left: -70px;
 }
 h2.title strong {
-  font-family: 'Titillium Web';
+  font-family: 'Source Sans Pro';
   font-weight: 700;
   display: block;
 }
@@ -1323,7 +1323,8 @@ header #header-top,
   padding: 10px 0;
   color: #303030;
   font-size: 1.2em;
-  font-family: "Source Sans Pro";
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
 }
 @media only screen and (max-width: 800px) {
   header #header-top,
@@ -1366,7 +1367,7 @@ header .text-2:last-child,
 .main .text-2:last-child {
   margin-right: 0%;
 }
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1130px) {
   header .text-1,
   .main .text-1 {
     *zoom: 1;
@@ -1393,7 +1394,7 @@ header .text-2:last-child,
     margin-right: 0%;
   }
 }
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1130px) {
   header .text-2,
   .main .text-2 {
     *zoom: 1;
@@ -1465,13 +1466,13 @@ header #logo:last-child,
 header #logo a,
 .main #logo a {
   width: 100%;
+  height: 48px;
   background-image: url("http://broker.commercegurus.com/wp-content/uploads/2015/10/broker-logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   float: left;
   text-indent: -9999em;
   overflow: hidden;
-  height: 60px;
 }
 @media only screen and (max-width: 1050px) {
   header #logo,
@@ -1505,8 +1506,6 @@ header #logo a,
     clear: both;
   }
 }
-header .,
-.main .,
 header div#info,
 .main div#info {
   *zoom: 1;
@@ -1518,39 +1517,27 @@ header div#info,
   margin-right: 3%;
   height: 60px;
 }
-header .:before,
-.main .:before,
 header div#info:before,
 .main div#info:before,
-header .:after,
-.main .:after,
 header div#info:after,
 .main div#info:after {
   content: '';
   display: table;
 }
-header .:after,
-.main .:after,
 header div#info:after,
 .main div#info:after {
   clear: both;
 }
-header .:last-child,
-.main .:last-child,
 header div#info:last-child,
 .main div#info:last-child {
   margin-right: 0%;
 }
-@media only screen and (max-width: 1050px) {
-  header .,
-  .main .,
+@media only screen and (max-width: 1100px) {
   header div#info,
   .main div#info {
     display: none;
   }
 }
-header . .info-col,
-.main . .info-col,
 header div#info .info-col,
 .main div#info .info-col {
   *zoom: 1;
@@ -1562,31 +1549,21 @@ header div#info .info-col,
   margin-right: 3%;
   height: 60px;
 }
-header . .info-col:before,
-.main . .info-col:before,
 header div#info .info-col:before,
 .main div#info .info-col:before,
-header . .info-col:after,
-.main . .info-col:after,
 header div#info .info-col:after,
 .main div#info .info-col:after {
   content: '';
   display: table;
 }
-header . .info-col:after,
-.main . .info-col:after,
 header div#info .info-col:after,
 .main div#info .info-col:after {
   clear: both;
 }
-header . .info-col:last-child,
-.main . .info-col:last-child,
 header div#info .info-col:last-child,
 .main div#info .info-col:last-child {
   margin-right: 0%;
 }
-header . .info-col .icon,
-.main . .info-col .icon,
 header div#info .info-col .icon,
 .main div#info .info-col .icon {
   *zoom: 1;
@@ -1598,40 +1575,28 @@ header div#info .info-col .icon,
   margin-right: 1%;
   text-align: center;
 }
-header . .info-col .icon:before,
-.main . .info-col .icon:before,
 header div#info .info-col .icon:before,
 .main div#info .info-col .icon:before,
-header . .info-col .icon:after,
-.main . .info-col .icon:after,
 header div#info .info-col .icon:after,
 .main div#info .info-col .icon:after {
   content: '';
   display: table;
 }
-header . .info-col .icon:after,
-.main . .info-col .icon:after,
 header div#info .info-col .icon:after,
 .main div#info .info-col .icon:after {
   clear: both;
 }
-header . .info-col .icon:nth-child(2n),
-.main . .info-col .icon:nth-child(2n),
 header div#info .info-col .icon:nth-child(2n),
 .main div#info .info-col .icon:nth-child(2n) {
   margin-right: 0%;
   float: right;
 }
-header . .info-col .icon:nth-child(2n+1),
-.main . .info-col .icon:nth-child(2n+1),
 header div#info .info-col .icon:nth-child(2n+1),
 .main div#info .info-col .icon:nth-child(2n+1) {
   clear: both;
 }
-header . .info-col .info-2,
-.main . .info-col .info-2,
-header div#info .info-col .info-2,
-.main div#info .info-col .info-2 {
+header div#info .info-col .info-detail,
+.main div#info .info-col .info-detail {
   *zoom: 1;
   float: left;
   clear: none;
@@ -1640,41 +1605,35 @@ header div#info .info-col .info-2,
   margin-left: 0%;
   margin-right: 3%;
 }
-header . .info-col .info-2:before,
-.main . .info-col .info-2:before,
-header div#info .info-col .info-2:before,
-.main div#info .info-col .info-2:before,
-header . .info-col .info-2:after,
-.main . .info-col .info-2:after,
-header div#info .info-col .info-2:after,
-.main div#info .info-col .info-2:after {
+header div#info .info-col .info-detail:before,
+.main div#info .info-col .info-detail:before,
+header div#info .info-col .info-detail:after,
+.main div#info .info-col .info-detail:after {
   content: '';
   display: table;
 }
-header . .info-col .info-2:after,
-.main . .info-col .info-2:after,
-header div#info .info-col .info-2:after,
-.main div#info .info-col .info-2:after {
+header div#info .info-col .info-detail:after,
+.main div#info .info-col .info-detail:after {
   clear: both;
 }
-header . .info-col .info-2:nth-child(2n),
-.main . .info-col .info-2:nth-child(2n),
-header div#info .info-col .info-2:nth-child(2n),
-.main div#info .info-col .info-2:nth-child(2n) {
+header div#info .info-col .info-detail:nth-child(2n),
+.main div#info .info-col .info-detail:nth-child(2n) {
   margin-right: 0%;
   float: right;
 }
-header . .info-col .info-2:nth-child(2n+1),
-.main . .info-col .info-2:nth-child(2n+1),
-header div#info .info-col .info-2:nth-child(2n+1),
-.main div#info .info-col .info-2:nth-child(2n+1) {
+header div#info .info-col .info-detail:nth-child(2n+1),
+.main div#info .info-col .info-detail:nth-child(2n+1) {
   clear: both;
 }
 header .title-info,
 .main .title-info {
-  font-weight: bold;
   margin-bottom: 5px;
   font-size: 50px;
+}
+header .text-info,
+.main .text-info {
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
 }
 header .title-info,
 .main .title-info,
@@ -1682,6 +1641,7 @@ header .text-info,
 .main .text-info {
   font-size: 15px;
   font-family: "Source Sans Pro";
+  color: #444;
 }
 header .ion-ios-telephone-outline,
 .main .ion-ios-telephone-outline,
@@ -1702,7 +1662,7 @@ header #search,
   width: 17.6%;
   margin-left: 0%;
   margin-right: 3%;
-  height: 60px;
+  position: relative;
 }
 header #search:before,
 .main #search:before,
@@ -1719,52 +1679,52 @@ header #search:last-child,
 .main #search:last-child {
   margin-right: 0%;
 }
-header #search form,
-.main #search form {
-  width: 100%;
-  position: relative;
-  border: 1px solid #eee;
-  border-radius: 2px;
-  padding: 10px 30px 10px 10px;
-}
-header #search form:hover,
-.main #search form:hover {
-  outline: none;
-  border-color: #9ecaed;
-  box-shadow: 0 0 3px #9ecaed;
-}
-@media only screen and (max-width: 1050px) {
-  header #search form,
-  .main #search form {
+@media only screen and (max-width: 1101px) {
+  header #search,
+  .main #search {
     display: none;
   }
 }
 header input#search-text,
 .main input#search-text {
-  border: 0;
+  border: 1px solid #eee;
+  border-radius: 2px;
   width: 100%;
-  font-family: "Source Sans Pro";
-  font-size: 18px;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 17px;
   outline: none;
+  padding: 10px 14px 16px 12px;
+  margin-top: -9px;
+}
+header input#search-text:focus,
+.main input#search-text:focus {
+  border: solid 1px #ccc;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.06);
 }
 header #submit-button,
 .main #submit-button {
   position: absolute;
-  right: 10px;
-  top: 10px;
   border-style: none;
   background-color: transparent;
+  top: 1px;
+  right: -20px;
 }
 header i.ion-ios-search-strong,
 .main i.ion-ios-search-strong {
-  color: #333;
+  color: #666;
   font-size: 18px;
   cursor: hand;
 }
-.ion-navicon-round,
-.ion-search {
+@media only screen and (min-width: 1101px) {
+  .menu-ipad {
+    display: none;
+  }
+}
+.ion-navicon,
+.ion-android-search {
   margin-top: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #000;
 }
 footer {
