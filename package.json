@@ -12,7 +12,7 @@
     "gulp-uglify": "*",
     "gulp-stylus": "*",
     "gulp-less": "*",
-    "jeet": "*",
+    "jeet": "6.1.1",
     "nib": "*",
     "rupture": "*",
     "stylus": "*",

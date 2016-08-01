@@ -67,9 +67,15 @@ $currentPageID = get_the_ID();
          </div>
           <!-- Mobile header until 800px -->
           <div class="menu-ipad">
-             <div class="icon-mobile">
+             <div class="search-mobile">
                  <i class="ion-android-search"></i>
-                 <i class="ion-navicon"></i>
+              </div>
+              <div class="meanmenu">
+                  <a href="#nav" class="menu-reveal" id="menuicon">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </a>
               </div>
           </div>
 
