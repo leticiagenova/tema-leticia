@@ -117,30 +117,54 @@ header, .main
 
 //Mobile Until 800px //
 
-.meanmenu
+.menu-ipad
   position relative
-  +above(1101px)
-    display none
-  a.menu-reveal
-    display block
+  .search-mobile i
+    +above(1101px)
+      display none
     position absolute
     right 0
-    margin-top -5px
-    span
+    margin-right 35px
+    margin-top 5px
+    font-size 20px
+    color #000000
+  .meanmenu
+    position relative
+    +above(1101px)
+      display none
+    a.menu-reveal
       display block
-      background-color #000000
-      height 2px
-      width 16px
-      margin-top 4px
+      position absolute
+      right 0
+      margin-top 3px
+      span
+        display block
+        background-color #000000
+        height 2px
+        width 16px
+        margin-top 4px
+    a.menuclose
+      span:nth-of-type(n+1)
+        transform rotate(45deg)
+        margin-top 10px
+      span:nth-of-type(n+2)
+        transform rotate(-45deg)
+        margin-top: -2px
+      span:nth-of-type(n+3)
+        opacity 0
+    .mean-nav
+      position absolute
+      margin-top 60px
+      width 100%
+      ul.menu-list
+        display block
+        li
+          border-top 1px solid #eeeeee
+          a
+            padding 0.8em 18px 0.65em 0px
 
-.menuclose
-  span:nth-of-type(1)
-    transform: rotate (45deg)
 
-.ion-navicon, .ion-android-search
-  margin-top 10px
-  font-size 20px
-  color #000000
+
 
 
 

@@ -66,7 +66,7 @@ $currentPageID = get_the_ID();
             <a href="/"><?= get_bloginfo('name') ?></a>
          </div>
           <!-- Mobile header until 800px -->
-          <div class="menu-ipad">
+          <div class="menu-ipad container">
              <div class="search-mobile">
                  <i class="ion-android-search"></i>
               </div>
@@ -76,6 +76,20 @@ $currentPageID = get_the_ID();
                       <span></span>
                       <span></span>
                   </a>
+                  <nav class="mean-nav">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="menu-item">Services</li>
+                        <li class="menu-item">Testemonials</li>
+                        <li class="menu-item">Projects</li>
+                        <li class="menu-item"><strong>New</strong>News</li>
+                        <li class="menu-item">About us</li>
+                        <li class="menu-item">Shop</li>
+                        <li class="menu-item">Contact us</li>
+                    </ul>
+                  </nav>
               </div>
           </div>
 
